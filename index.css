@@ -1,0 +1,138 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    /*background: url("src/bg_portfolio.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+}
+
+h1 span{
+    position: relative;
+}
+
+.container-btn {
+    position: relative;
+    top : 50px;
+}
+
+.btn-first{
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 25px;
+    padding: 20px;
+    width: 200px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn-1{
+    margin-right: 20px;;
+}
+
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color:#333;
+}
+
+.lines{
+    position: absolute;
+    top: 6%;
+    left : 5%;
+}
+
+.line-1{
+    width: 200px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.line-2{
+    width: 100px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo{
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+    color: #f1f1f1;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+
+footer a {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.medias{
+    list-style-type: none;
+    position: absolute;
+    left: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.media-bubble{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.media-logo{
+    width: 45px;
+    height: 45px;
+    transform: translateY(5%);
+}
