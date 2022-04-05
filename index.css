@@ -9,9 +9,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100vw;
-    /*background: url("src/bg_portfolio.jpg");*/
+    background: url("src/IMG_0431.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     overflow-x: hidden;
 }
@@ -50,7 +51,7 @@ h1 span{
 }
 
 .btn-1{
-    margin-right: 20px;;
+    margin: 20px;;
 }
 
 .btn-first:hover {
