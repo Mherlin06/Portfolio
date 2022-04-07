@@ -1,0 +1,83 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background: #f1f1f1;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top:0px;
+    height: 100px;
+    padding: 50px ;
+    align-items: center;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+    background: #f1f1f1;  
+    min-width: 1000px;
+    width: 100%;  
+}
+.blog-logo{
+    height: 50px;
+    width: 50px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.name{
+    font-family: sriracha, cursive;
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+    margin: 0 20px;
+}
+.contact-btn{
+    font-size: 20px;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, hsla(241, 25%, 58%, 1) 0%,hsla(9, 79%, 79%, 1) 100%);
+    margin: 0 50px 0 auto;
+    padding: 10px 20px;
+}
+.contact-btn a {
+    text-decoration: none;
+    font-family: monsa, sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+.contact-btn:hover{
+    background: linear-gradient(to left, hsla(241, 25%, 58%, 1) 0%,hsla(9, 79%, 79%, 1) 100%);
+}
+.contact-btn a:hover{
+    color:#f1f1f1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1100px;
+    /* background: red; */
+    padding: 5%;
+}
+.info-photo{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 5px 11px rgba(51, 51, 51, 0.3); 
+}
