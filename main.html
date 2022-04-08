@@ -8,26 +8,29 @@
     <link href="main.css" rel="stylesheet">
     <link rel="icon" href="src\icons8-avion-en-papier-100.png">
     <link href="https://fonts.googleapis.com/css2?family=Caudex&family=Martel+Sans&family=Monda&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
 </head>
 <body>
     <header>
         <a href="#" class="blog-logo"><img src="src\paper-plane-svgrepo-com.svg" alt="paper-plane-logo"></a>
-        <div class="name"><span>Hugues MOURICE</span></div>
-        <div class="contact-btn"><a href="#contact">Contact me!</a></div>
+        <div class="name">Hugues MOURICE</div>
+        <div class="contact-btn" id="first-contact"><a href="#contact">Contact me!</a></div>
     </header>
 
     <main>
         <section class="aboutme">
             <img src="src/IMG_7819.jpg" alt="photo d'un gars extra" class="info-photo">
             <div class="info-card">
-                <div class="bulle-logo">
-                    <div class="logo-border"><div class="logo-btn"><a href="https://www.linkedin.com/in/hugues-mourice/"><img src="src\icons8-linkedin-entouré.svg" alt="linkedin logo" class="logos"></a></div></div>
-                    <div class="logo-border"><div class="logo-btn"><a href="https://github.com/Mherlin06"><img src="src\icons8-github.svg" alt="github logo" class="logos"></a></div></div>    
-                    <div class="logo-border"><div class="logo-btn"><a href="#"><img src="src\icons8-avion-en-papier-100.png" alt="blog logo" class="logos"></a></div></div>
-                </div>
+                <ul class="bulle-logo">
+                    <li class="logo-btn"><a href="https://www.linkedin.com/in/hugues-mourice/"><img src="src\icons8-linkedin-entouré.svg" alt="linkedin logo" class="logos"></a></li>
+                    <li class="logo-btn"><a href="https://github.com/Mherlin06"><img src="src\icons8-github.svg" alt="github logo" class="logos"></a></li>    
+                    <li class="logo-btn"><a href="#"><img src="src\icons8-avion-en-papier-100.png" alt="blog logo" class="logos"></a></li>
+                </ul>
                 <div class="intro">
-                    <h1>Hugues MOURICE, ...</h1>
-                    <span></span>
+                    <h1 id="txtAnim"></h1>
                 </div>
             </div>
         </section>
@@ -70,4 +73,5 @@
 
     </footer>    
 </body>
+<script src="main.js"></script>
 </html>
