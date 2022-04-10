@@ -6,7 +6,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 body{
@@ -18,16 +18,17 @@ body{
 }
 
 header{
-    display: flex;
-    position: sticky;
+    min-width: 1000px;
+    width: 100vw;  
     top:0px;
     height: 100px;
     padding: 50px ;
+    display: flex;
+    position: sticky;
     align-items: center;
-    border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
     background: #f1f1f1;  
-    min-width: 1000px;
-    width: 100%;  
     z-index: 2;
 }
 .blog-logo{
@@ -42,6 +43,40 @@ header{
     font-weight: 800;
     color: #333;
     margin: 0 20px;
+}
+.menu{
+    width:40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu__label{
+    list-style: none;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+
+}
+
+.menu__label__selector{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: transparent;
+    margin-bottom: 10px;
+}
+.menu__label a{
+    text-decoration: none;
+    color: #333;
+    font-family: monda, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.menu__label a:hover + .menu__label__selector{
+    background: linear-gradient(to left, hsla(241, 25%, 58%, 1) 0%,hsla(9, 79%, 79%, 1) 100%);
 }
 .contact-btn{
     font-size: 20px;
@@ -69,18 +104,20 @@ main{
     align-items: center;
     width: 1100px;
 }
-.aboutme{
+.entrance{
     display: flex;
     justify-content: flex-start;
-    min-width: 1100px;
+    width: 100%;
     padding: 5%;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+
 }
 .info-photo{
-    width: 350px;
+    width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 1px 5px 11px hsla(0, 0%, 20%, 0.3); 
-    z-index: 2;
+    z-index: 1;
 }
 .info-card{
     display: flex;
@@ -98,14 +135,25 @@ main{
     height: 100%;
 }
 .logo-btn{  
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
     margin: 30% 0;
+    background: linear-gradient(to left, hsla(241, 25%, 58%, 1) 0%,hsla(9, 79%, 79%, 1) 100%);
+}
+.logo-bg{
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logos{
     width: 45px;
@@ -123,4 +171,24 @@ main{
     font-family: monda, sans-serif;
     color: #333;
     font-size: 30px;
+}
+.about_me{
+    padding: 5%;
+    width: 100%;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+    text-align: center;
+
+}
+h2{
+    font-family: sriracha, cursive;
+    color: #333;
+    font-size: 3rem;
+}
+.about_me p{
+    font-family: monda, sans-serif;
+    font-size: 1.7rem;
+    color: #333;
+    padding: 3%;
+
+    
 }
