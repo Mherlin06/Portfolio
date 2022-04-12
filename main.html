@@ -5,53 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugues MOURICE | Dev | main_page</title>
-    <link href="main.css" rel="stylesheet">
-    <link rel="icon" href="src\icons8-avion-en-papier-100.png">
+    <link href="css\main.css" rel="stylesheet">
+    <link rel="icon" href="src\icon\icons8-avion-en-papier-100.png">
     <link href="https://fonts.googleapis.com/css2?family=Caudex&family=Martel+Sans&family=Monda&family=Sriracha&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-
 </head>
 <body>
     <header>
-        <a href="#" class="blog-logo"><img src="src\paper-plane-svgrepo-com.svg" alt="paper-plane-logo"></a>
-        <div class="name">Hugues MOURICE</div>
-        <ul class="menu">
-            <li class="menu__label">
-                <a href="#about_me">About Me</a>
-                <div class="menu__label__selector"></div>
-            </li>
-            <li class="menu__label">
-                <a href="#projects">Projects</a>
-                <div class="menu__label__selector"></div>
-            </li>
-            <li class="menu__label">
-                <a href="#technos">Technos</a>
-                <div class="menu__label__selector"></div>
-            </li>
-        </ul>
-        <div class="contact-btn" id="first-contact"><a href="#contact">Contact me!</a></div>
+        <section class="menu">
+            <ul class="menu__list">
+                <li class="list__link">
+                    <a href="#about-me">About Me</a>
+                    <div class="list__dot"></div>                       
+                </li>
+                <li class="list__link">
+                    <a href="#technos">Technos</a>
+                    <div class="list__dot"></div>                       
+                </li>
+                <li class="list__link">
+                    <a href="#projects">Projects</a>
+                    <div class="list__dot"></div>                       
+                </li>
+                <li class="list__link">
+                    <a href="#contact">Contact</a>
+                    <div class="list__dot"></div>                       
+                </li>
+            </ul>
+        </section>
+        <div class="logo">
+            <img src="" alt="logo paper-plane" class="logo__image">
+        </div>
+        <section class="media">
+            <ul class="media__list">
+                <li class="list__icon">
+                    <a href="" class="icon__logo" target="_blank"><img src="#" alt="Linkedin logo"></a> 
+                </li>
+                <li class="media__list__icon">
+                    <a href="" class="icon__logo" target="_blank"><img src="#" alt="github logo"></a>       
+                </li>
+                <li class="media__list__icon">
+                    <a href="" class="icon__logo" target="_blank"><img src="#" alt="resume download logo"></a>
+                </li>
+            </ul>
+        </section>
     </header>
 
     <main>
-        <section class="entrance">
-            <img src="src/IMG_7819.jpg" alt="photo d'un gars extra" class="info-photo">
-            <div class="info-card">
-                <ul class="bulle-logo">
-                    <li class="logo-btn"><div class="logo-bg"><a href="https://www.linkedin.com/in/hugues-mourice/"><img src="src\icons8-linkedin-entouré.svg" alt="linkedin logo" class="logos"></a></div></li>
-                    <li class="logo-btn"><div class="logo-bg"><a href="https://github.com/Mherlin06"><img src="src\icons8-github.svg" alt="github logo" class="logos"></a></div></li>    
-                    <li class="logo-btn"><div class="logo-bg"><a href="#"><img src="src\icons8-avion-en-papier-100.png" alt="blog logo" class="logos"></a></div></li>
-                </ul>
-                <div class="intro">
-                    <h1 id="txtAnim"></h1>
-                </div>
+        <section class="intro">
+            <div class="intro__title">
+                <h1>Hello! I'm Hugues MOURICE</h1>
+                <p>Full-Stack Web Developper</p>
+                <p>Based in Bordeaux, France</p>
             </div>
+            <div class="intro__profile">
+                <div class="profile__bio">
+                    <div class="bio__hook">
+                        <h3>Biography</h3>
+                        <p>Work for money, Code for passion!
+                           I'm Hugues, father and Web developper seeking for an apprenticeship contract.
+                        </p>
+                        <p>Actually studying at the 3W-Academy</p>
+                        <a href="#about-me">see more ...</a>
+                    </div>
+                    <div class="bio__contact">
+                        <h3>Contact</h3>
+                        <p>
+                            Bordeaux, France<br>
+                            mourice.hugues@gmail.com<br>
+                            +33 6 58 33 12 79
+                        </p>
+                    </div>
+                    <button class="hire-me-btn"><a href="#contact">Hire me!</a></button>
+                </div>
+                <img src="" alt="profile picture" class="profile__photo">
+                <div class="profile__skills">
+                    <p class="black">Teamwork</p>
+                    <p class="grey">Autonomy</p>
+                    <p class="black">Adaptability</p>
+                    <p class="grey">Easy-learner</p>
+                    <p class="black">Great communication</p>
+                    <p class="grey">Jolly</p>
+                    <p class="black">Globe-trotter</p>
+                    <p class="grey">Amateur photographer</p>
+                </div>                
+            </div>
+
         </section>
-        <section class="about_me" id="about_me">
+        <section class="about-me" id="about-me">
             <h2>Some words about me ...</h2>
             <p>
-                " I'm a 3 years old girl proud father who enjoys giving life to his ideas with code.
+                " I'm a father who enjoys giving life to his ideas with code.
             </p>
             <p>
                 I first discovered programming during my first year in college, back in 2010.
@@ -67,6 +111,8 @@
             <p>
                 I took the first job that came to me and started to work at this fast-food, the one with the yellow "M". 
                 I learned team management naturally with practice. Worked on other restaurants, to finally become executive assistant.
+            </p>
+            <p>    
                 But you know what? I met my wife, friends, and found another passions. 
                 We began to travel starting with France, our own country. Then Europe, Asia, North America, all around the world. 
                 Those trips lasted for days, then weeks, till complete month. We also took a huge amont of photography along the way, getting technically better everytime. 
@@ -82,15 +128,10 @@
             </p>
             <p>
                 I'm now seeking an apprenticeship contract where i can contribute with my skills and knowlegdge to help a company achieve their goals. 
-                Also working alongside senior developers will help me raise my standards about development expectations. "
+                Also working alongside senior developers will help me raise my standards about Web development expectations. "
             </p>
         </section>
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
 
-            </div>
-        </section>
         <section class="technos" id="technos">
             <h2>Favorites Technologies </h2>
             <div class="techno-grid">
@@ -115,14 +156,21 @@
             </div>
         </section>
 
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+    
+            </div>
+        </section>
+        
         <section class="contact" id="contact">
-
+            
         </section>
     </main>
-
+    
     <footer>
 
     </footer>    
 </body>
-<script src="animation.js"></script>
+<script src="js\animation.js"></script>
 </html>
