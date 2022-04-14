@@ -307,7 +307,49 @@ main{
             background-color: $white;
             border: 3px solid $orange;
             transform: translateX(10%);
-            padding:5%
+            padding:5%;
+            .card__text{
+                padding:0 10% 5% 5%;
+                h2 span{
+                    color: $orange;
+                }
+                .card__info li{
+                    width: 100%;
+                    list-style: none;
+                    font-family: monda, sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: $orange;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        text-transform: none;
+                        font-weight: 100;
+                        color: $black;
+                        text-align: end;
+                    }
+                }
+                .card__logo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly; 
+                    li{
+                        list-style: none;
+                        a{
+                            cursor: pointer;
+                            img{
+                                height: 35px;
+                                transition: all ease-in 1;
+                                &:hover{
+                                    transform: translateY(-5px);
+                                    filter: opacity(0.5) drop-shadow(0 0 0 $orange) saturate(400%);
+                                }
+                            }
+                        }
+                    }                   
+                }
+
+            }
         }
     }
 }

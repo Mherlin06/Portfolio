@@ -472,4 +472,67 @@ main .contact__card {
           transform: translateX(10%);
   padding: 5%;
 }
+
+main .contact__card .card__text {
+  padding: 0 10% 5% 5%;
+}
+
+main .contact__card .card__text h2 span {
+  color: #BA5C12;
+}
+
+main .contact__card .card__text .card__info li {
+  width: 100%;
+  list-style: none;
+  font-family: monda, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #BA5C12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .contact__card .card__text .card__info li span {
+  text-transform: none;
+  font-weight: 100;
+  color: #333;
+  text-align: end;
+}
+
+main .contact__card .card__text .card__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .contact__card .card__text .card__logo li {
+  list-style: none;
+}
+
+main .contact__card .card__text .card__logo li a {
+  cursor: pointer;
+}
+
+main .contact__card .card__text .card__logo li a img {
+  height: 35px;
+  -webkit-transition: all ease-in 1;
+  transition: all ease-in 1;
+}
+
+main .contact__card .card__text .card__logo li a img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 #BA5C12) saturate(400%);
+          filter: opacity(0.5) drop-shadow(0 0 0 #BA5C12) saturate(400%);
+}
 /*# sourceMappingURL=main.css.map */
