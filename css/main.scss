@@ -248,53 +248,66 @@ main{
         }
     }
     .techno{
-        background-color: #fff;
-        width: 85%;
-        height: fit-content;
-        &__grid{  
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 150px 150px 150px;
-            gap: 80px 18%;
-            grid-auto-flow: row;
-            justify-content: stretch;
-            align-content: stretch;
-            justify-items: stretch;
-            align-items: stretch;
-            grid-template-areas:
-              "html css javascript PHP"
-              "Java Api-Rest ReactJS NodeJS"
-              "GIT GitHub Visual-Studio-Code Figma";
-
-            .html { grid-area: html; }
-            .css { grid-area: css; }
-            .javascript { grid-area: javascript; }
-            .PHP { grid-area: PHP; }
-            .Java { grid-area: Java; }
-            .Api-Rest { grid-area: Api-Rest; }
-            .ReactJS { grid-area: ReactJS; }
-            .NodeJS { grid-area: NodeJS; }
-            .GIT { grid-area: GIT; }
-            .GitHub { grid-area: GitHub; }
-            .Visual-Studio-Code { grid-area: Visual-Studio-Code; }
-            .Figma { grid-area: Figma; }
-
-            &__card{
-                border: 1px solid $black;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .gallery{
+            display: flex;
+            justify-content: center;
+            width: 85%;
+            max-width: 1300px;
+            flex-wrap: wrap;
+            &__item{
                 background-color: $grey;
+                width: 150px;
+                height: 150px;
+                flex-shrink: 0;
+                margin:20px;
+                border-radius: 20px 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: auto;
-                height: 80px;
                 img{
-
+                    width: 100px;
+                    height: 100px;
                 }
             }
-    
         }
-          
-          
-          
+    }
+    .projects{
+        background-color: $grey;
+        color: $pink;
+        width: 85%;
+        text-align: center;
+        padding: 50px;
+    }
+    .contact{
+        width: 85%;
+        min-width: 500px;
+        max-width: 1300px;
+        border-radius: 15px;
+        border: 3px solid $orange;
+        background-image: url("../src/photo/IMG_9837.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: flex-end;
+        &__card{
+            width:70%;
+            min-width: 300px;
+            aspect-ratio: 3/2;
+            min-height: 200px;
+            margin: 5% 0;
+            background-color: $white;
+            border: 3px solid $orange;
+            transform: translateX(10%);
+            padding:5%
+        }
     }
 }

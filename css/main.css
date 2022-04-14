@@ -378,109 +378,44 @@ main .about-me p {
 }
 
 main .techno {
-  background-color: #fff;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .techno .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 85%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  max-width: 1300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-main .techno__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 150px 150px 150px;
-      grid-template-rows: 150px 150px 150px;
-  gap: 80px 18%;
-  grid-auto-flow: row;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  justify-items: stretch;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-      grid-template-areas: "html css javascript PHP" "Java Api-Rest ReactJS NodeJS" "GIT GitHub Visual-Studio-Code Figma";
-}
-
-main .techno__grid .html {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: html;
-}
-
-main .techno__grid .css {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: css;
-}
-
-main .techno__grid .javascript {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: javascript;
-}
-
-main .techno__grid .PHP {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: PHP;
-}
-
-main .techno__grid .Java {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: Java;
-}
-
-main .techno__grid .Api-Rest {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: Api-Rest;
-}
-
-main .techno__grid .ReactJS {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: ReactJS;
-}
-
-main .techno__grid .NodeJS {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: NodeJS;
-}
-
-main .techno__grid .GIT {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: GIT;
-}
-
-main .techno__grid .GitHub {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: GitHub;
-}
-
-main .techno__grid .Visual-Studio-Code {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: Visual-Studio-Code;
-}
-
-main .techno__grid .Figma {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: Figma;
-}
-
-main .techno__grid__card {
-  border: 1px solid #333;
+main .techno .gallery__item {
   background-color: #bababa;
+  width: 150px;
+  height: 150px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 20px;
+  border-radius: 20px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,7 +425,51 @@ main .techno__grid__card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: auto;
-  height: 80px;
+}
+
+main .techno .gallery__item img {
+  width: 100px;
+  height: 100px;
+}
+
+main .projects {
+  background-color: #bababa;
+  color: #F0386B;
+  width: 85%;
+  text-align: center;
+  padding: 50px;
+}
+
+main .contact {
+  width: 85%;
+  min-width: 500px;
+  max-width: 1300px;
+  border-radius: 15px;
+  border: 3px solid #BA5C12;
+  background-image: url("../src/photo/IMG_9837.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .contact__card {
+  width: 70%;
+  min-width: 300px;
+  aspect-ratio: 3/2;
+  min-height: 200px;
+  margin: 5% 0;
+  background-color: #f1f1f1;
+  border: 3px solid #BA5C12;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  padding: 5%;
 }
 /*# sourceMappingURL=main.css.map */
